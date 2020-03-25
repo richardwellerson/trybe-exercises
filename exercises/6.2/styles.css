@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    margin: 3% 10%;
+    background-color: rgba(73, 189, 34, 0.353);
+}
+
+legend {
+    text-align: left;
+}
+
+.all-data {
+    text-align: left;
+}
+textarea {
+    resize: none;
+}

@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-attributes-text {
+    display: flex;
+    justify-content: space-around;
+}
+article p {
+    font-family: Tahoma;
+    font-size: 15px;
+    padding: 0% 1%;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div p{
+    padding: 10px;
+}
+

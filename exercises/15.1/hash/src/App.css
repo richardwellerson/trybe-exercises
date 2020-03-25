@@ -1,0 +1,47 @@
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+td {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+}
+
+td:hover {
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+}
+
+.Hash_image-selection {
+  height: auto;
+  width: 10vh;
+}
+
+.Table_cell {
+  height: 15vh;
+  width: 15vh;
+}
+
+.Matrix_images-selection {
+  flex-flow: row nowrap;
+}
+
+.Matrix_father-div {
+  display: flex;
+  justify-content: center;
+}
+
+.Table_value_x-Or-o {
+  display: flex;
+  font-size: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hash_title {
+  font-size: 3vh;
+}

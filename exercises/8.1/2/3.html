@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício do dia 8.1</title>
+    <style>
+    body {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div {
+        padding: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="clicker">Click Me!</button>
+        <h1 class="counter"></h1>
+    </div>
+    <script type="text/javascript">
+    
+    let x = 0;
+
+        function counter(){
+            let capButton = document.querySelector(".clicker")
+            let capCounter = document.querySelector(".counter")
+            capButton.addEventListener("click", function(){
+                x += 1
+                capCounter.innerHTML = `Você clicou ${x} vezes.`
+                
+            })
+        }
+    
+        counter()
+    
+        </script>
+</body>
+</html>

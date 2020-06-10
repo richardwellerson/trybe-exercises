@@ -1,0 +1,19 @@
+{
+  "name": "scriptimc",
+  "version": "1.0.0",
+  "description": "node exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test --coverage",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "imc"
+  ],
+  "author": "Richard Wellerson <richardwellerson@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

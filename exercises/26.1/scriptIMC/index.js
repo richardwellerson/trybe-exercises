@@ -13,20 +13,16 @@ const obesityII = IMC >= 35 && IMC <= 39.9;
 if (thin) {
   console.log(`Seu IMC é ${IMC} e você está magro demais.`);
   return;
-}
-if (normal) {
+} else if (normal) {
   console.log(`Seu IMC é ${IMC} e você está no seu peso normal.`);
   return;
-}
-if (overweight) {
+} else if (overweight) {
   console.log(`Seu IMC é ${IMC} e você está no acima do peso.`);
   return;
-}
-if (obesityI) {
+} else if (obesityI) {
   console.log(`Seu IMC é ${IMC} e você está com Obesidade Grau I.`);
   return;
-}
-if (obesityII) {
+} else if (obesityII) {
   console.log(`Seu IMC é ${IMC} e você está com Obesidade Grau II.`);
   return;
 }

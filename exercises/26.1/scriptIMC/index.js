@@ -2,6 +2,7 @@ const readline = require('readline-sync');
 
 const weight = readline.questionFloat('Digite seu peso: ');
 const height = readline.questionFloat('Digite sua altura: ');
+
 const IMC = weight / Math.pow(height, 2);
 
 const thin = IMC < 18.5;

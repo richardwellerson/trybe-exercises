@@ -12,7 +12,7 @@ const readName = (msg) => {
   });
 
   return new Promise((resolve) => {
-    rl.question(msg, answer => {
+    rl.question(msg, (answer) => {
       rl.close();
       resolve(answer);
     });
@@ -20,18 +20,18 @@ const readName = (msg) => {
 };
 
 const runApp = async () => {
-  const name1 = await readName('Nome do arquivo1: ');
+  const name1 = await readName('\nNome do arquivo1: ');
 
   try {
     console.time('#readFile1');
     const file1 = await readfile(name1);
-    console.log(file1.byteLength);
     console.log(`Tamanho do arquivo: ${file1.byteLength}`);
+    console.timeEnd('#readFile1');
   } catch (err) {
     console.log(`Tipo do erro: ${err.code}`);
   }
 
-  const name2 = await readName('Nome do arquivo2: ');
+  const name2 = await readName('\nNome do arquivo2: ');
 
   try {
     console.time('#readFile2');

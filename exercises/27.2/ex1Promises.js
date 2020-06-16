@@ -17,8 +17,8 @@ rl.question('Qual o arquivo que deseja ler? ', (answer) => {
   };
   returnFile(answer)
     .then((response) => {
-      console.log(`Dados: ${response}`);
-      console.log(`Tamanho do arquivo: ${Buffer.byteLength(response)}`);
+      console.log(`Dados: \n\n${response}`);
+      console.log(`Tamanho do arquivo: ${Buffer.byteLength(response)} Bytes`);
     })
     .catch((error) => { console.error(error) });
   rl.close();

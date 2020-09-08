@@ -1,6 +1,5 @@
 const prodController = require('./productController.js');
 const prodModel = require('../models/productModel');
-const productController = require('./productController.js');
 
 describe('Product Controller', () => {
 
@@ -41,7 +40,7 @@ describe('Product Controller', () => {
         .spyOn(prodModel.prototype, 'getById')
         .mockReturnValueOnce(null);
 
-      await productController.getProductById(reqMock, resMock);
+      await prodController.getProductById(reqMock, resMock);
 
       expect(getProductByIdSpy).toBeCalledTimes(1);
       expect(resMock.status).toBeCalledWith(404);
@@ -63,7 +62,7 @@ describe('Product Controller', () => {
         .spyOn(prodModel.prototype, 'getById')
         .mockReturnValueOnce(prodMock);
 
-      await productController.getProductById(reqMock, resMock);
+      await prodController.getProductById(reqMock, resMock);
 
       expect(getProductByIdSpy).toBeCalledTimes(1);
       expect(resMock.status).toBeCalledWith(200);
@@ -71,6 +70,5 @@ describe('Product Controller', () => {
 
       getProductByIdSpy.mockRestore();
     });
-  })
-
+  });
 });
